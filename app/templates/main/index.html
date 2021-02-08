@@ -7,6 +7,8 @@
 {% set active_page = "main.index" %}
 {% block css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='./css/main.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 {% endblock %}
 
 
@@ -15,7 +17,7 @@
 
       <div class="jumbotron">
         <div class="container text-center">
-          <h1><b>WELCOME</b></h1> 
+          <h1 style="font-weight: 1000;"><b>WELCOME</b></h1> 
           <p>I built this website to better showcase who I am and what I like to do. Please explore and feel free to reach out.</p>
         </div>
       </div>

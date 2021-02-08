@@ -1,6 +1,12 @@
+* {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 img {
     border-radius: 50%;
+    border: 2px solid rgb(60, 172, 201);
     height: 85%;
+    padding: 5px;
   }
 
 img:hover {

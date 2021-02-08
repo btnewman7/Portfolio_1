@@ -7,18 +7,20 @@
 {% set active_page = "main.about" %}
 {% block css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='./css/about.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 {% endblock  %}
 
 {%  block content  %}
 <div class="jumbotron">
     <div class="container text-center">
-      <h1><b>ABOUT ME</b></h1> 
+      <h1 style="font-weight: 1000;"><b>ABOUT ME</b></h1> 
       <p>"The future depends on what you do today" - Ghandi</p>
     </div>
 </div>
 <div class="container">
     <div class="row justify-content-center">
-      <div class="col-sm-5">
+      <div class="col-md-5">
         <h3 class="text-center">Benjamin Newman</h3>
         <hr>
         <img src="{{url_for('static', filename='./images/Screenshot_20210122-114434_Instagram.jpg')}}" class="img-responsive" style="width:100%" alt="Avatar">
@@ -32,11 +34,11 @@
         </ul>
         <br>
       </div>
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <div id="aboutme" class="row justify-content-center">
-        <p>Yes, I'm a <b>Data Analyst</b>, but stopping there would be some poor story-telling, and that's half the job isn't it? You already know what I do, so let me tell you a little bit about who I am.</p>
-        <p>I grew up near Boston, went to school in Seattle, and now reside in the heart of New York City. I'm a nerd, facinated by the human body, and aware of the nutritional value of everything you put into it. I also love statistics, and that's probably why baseball-reference.com is the homepage on my web browser.</p>
-        <p>Ultimatley my passion is to explore and experience. Whether its a new skill I want to learn (cooking, guitar, painting), or a city and people I know nothing about. This passion brought me to the field of data. A field whose purpose is to be explored and to expose us to the little details and patterns of the world we couldn't otherwise see.</p>
+        <p>I'm a <b>Data Analyst</b> and <b>Data Engineer</b>, but stopping there would be poor story-telling, and that's half the fun of data, isn't it? You already know what I do, so let me tell you a bit about who I am.</p>
+        <p>I grew up near Boston, went to school in Seattle (Go Dawgs), and now reside in the heart of New York City. I'm a nerd, facinated by the human body, and aware of the nutritional value of everything I put into it. I also love statistics, which is probably why baseball-reference.com is the homepage on my web browser.</p>
+        <p>Ultimatley my passion is to explore and experience. Whether its a new skill I want to learn (coding, cooking, painting), or a city and people I have yet to visit. This passion brought me to the field of data- a field whose purpose is to be explored and to expose us to the little details and patterns of life we couldn't otherwise see.</p>
       </div>
     </div> 
     <hr> 

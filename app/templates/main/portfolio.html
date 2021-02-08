@@ -8,50 +8,60 @@
 
 {% block css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='./css/portfolio.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 {% endblock %}
 
 {%  block content  %}
 <div class="jumbotron">
     <div class="container text-center">
-      <h1><b>PORTFOLIO</b></h1> 
+      <h1 style="font-weight: 1000;"><b>PORTFOLIO</b></h1> 
       <p>"The nature of a portfolio is that it's always a work in progress"</p>
     </div>
 </div>
 
-<div class="container">    
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="panel panel-primary text-center">
-          <div class="panel-heading">
-            <h5><b>IMDB Revenue Data Analysis (1966 - 2015)</b></5></div>
-            <ul style="list-style: none; padding-left:0%;">
-                <li><b>Skills: </b>Python, Data Visualization, Data Cleansing</li>
-            </ul>
-          <div class="panel-body"><img src="{{url_for('static', filename='./images/director_revenue.png')}}" class="img-responsive rounded border" style="width:100%" alt="Image"></div>
-          <a href="https://github.com/btnewman7/IMDB_2015_Movie_Revenue_Analysis" class="button btn btn-outline-info gradient-button rounded">Notebook</a>
-        </div>
-      </div>
-      <div class="col-sm-4"> 
-        <div class="panel panel-danger text-center">
-          <div class="panel-heading">
-              <h5><b>JHU COVID-19 Web Scraping Application</b></5></div>
-          <ul style="list-style: none; padding-left:0%;">
-            <li><b>Skills: </b>Flask, Python, HTML, CSS, BeautifulSoup4, Selenium, Jinja</li>
-        </ul>
-          <div class="panel-body"><img src="{{url_for('static', filename='./images/jhu_mortality_shot.png')}}" class="img-responsive border rounded" style="width:100%" alt="Image"></div>
-          <a href="https://github.com/btnewman7/CovidDataScraper" class="button btn btn-outline-info rounded">Code</a>
-          <a href="https://jhu-data-scraper.herokuapp.com/" class="button btn btn-outline-success rounded">Application</a>
-        </div>
-      </div>
-      <div class="col-sm-4"> 
+<div class="container p-0">    
+    <div class="row portfolio-row justify-center">
+      <div class="col-12 col-md-5"> 
         <div class="panel panel-success text-center">
           <div class="panel-heading">
             <h5><b>Fuel Economy Analysis (2008 vs. 2018)</b></5></div>
             <ul style="list-style: none; padding-left:0%;">
                 <li><b>Skills: </b>Python, Data Visualization, Data Cleansing </li>
             </ul>
+            <p id="description"> In-depth, step-by-step Jupyter Notebook containing seperate 2 CSV files. Cleaned, combined and explored using Python</p>
           <div class="panel-body"><img src="{{url_for('static', filename='./images/mpg_displacement.png')}}" class="img-responsive border rounded" style="width:100%" alt="Image"></div>
           <a href="https://github.com/btnewman7/Fuel_Economy_Analysis" class="button btn btn-outline-info rounded">Notebook</a>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-12 col-md-5"> 
+        <div class="panel panel-danger text-center">
+          <div class="panel-heading">
+              <h5><b>JHU COVID-19 Web Scraping Application</b></5></div>
+          <ul style="list-style: none; padding-left:0%;">
+            <li><b>Skills: </b>Flask, Python, HTML, CSS, BeautifulSoup4, Selenium</li>
+        </ul>
+        <p id="description"> Created this website from scratch using Flask, and BeautifulSoup4. Users and table information are stored in a PostgreSQL database. All data can be stored into local CSV files using additional routes provided in the repo. </p>
+          <div class="panel-body"><img src="{{url_for('static', filename='./images/jhu_mortality_shot.png')}}" class="img-responsive border rounded" style="width:100%" alt="Image"></div>
+          <a href="https://github.com/btnewman7/CovidDataScraper" class="button btn btn-outline-info rounded">Code</a>
+          <a href="https://jhu-data-scraper.herokuapp.com/" class="button btn btn-outline-success rounded">Application</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row portfolio-row justify-center">
+      <div class="col-12 col-md-5">
+        <div class="panel panel-primary text-center">
+          <div class="panel-heading">
+            <h5><b>IMDB Revenue Data Analysis (1966 - 2015)</b></5></div>
+            <ul style="list-style: none; padding-left:0%;">
+                <li><b>Skills: </b>Python, Data Visualization, Data Cleansing</li>
+            </ul>
+            <p id="description"> Simplified Jupyter Notebook containing CSV stored movie data. Cleaned and explored using Python</p>
+          <div class="panel-body"><img src="{{url_for('static', filename='./images/director_revenue.png')}}" class="img-responsive rounded border" style="width:100%" alt="Image"></div>
+          <a href="https://github.com/btnewman7/IMDB_2015_Movie_Revenue_Analysis" class="button btn btn-outline-info gradient-button rounded">Notebook</a>
         </div>
       </div>
     </div>
